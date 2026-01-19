@@ -161,8 +161,8 @@ const cancelDelete = () => {
           <div class="mt-6 flex justify-end">
             <button
               @click="closeModal"
-              class="px-6 py-2.5 rounded-xl bg-linear-to-r from-cyan-500 to-blue-600 
-                     font-bold text-white shadow-lg shadow-cyan-500/[.25] transition-all 
+              class="px-6 py-2.5 rounded-xl bg-pink-700
+                     font-bold text-white shadow-lg shadow-pink-500/25 transition-all 
                      hover:shadow-cyan-500/40 hover:-translate-y-0.5"
             >
               Fechar

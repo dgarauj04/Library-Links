@@ -89,7 +89,7 @@ const toggleAiMode = () => {
           :class="[
             'flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-300',
             isAiMode 
-              ? 'bg-purple-500 text-white shadow-lg shadow-purple-500/[.3]' 
+              ? 'bg-purple-500 text-white shadow-lg shadow-purple-500/30' 
               : 'bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-800 dark:bg-white/5 dark:text-gray-400 dark:hover:bg-white/10 dark:hover:text-white'
           ]"
         >
@@ -105,7 +105,7 @@ const toggleAiMode = () => {
         query ? 'opacity-100' : 'opacity-0'
       ]"
     >
-      <span class="text-slate-500 dark:text-gray-500 font-medium">
+      <span class="text-purple-400/40 font-medium">
         {{ isAiMode ? 'Pressione Enter para buscar na web' : 'Buscando na biblioteca...' }}
       </span>
       <span v-if="isAiMode" class="text-purple-600 dark:text-purple-400 font-bold">

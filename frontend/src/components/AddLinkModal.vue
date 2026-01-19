@@ -187,15 +187,15 @@ const btnSubmit = () => {
               <button
                 type="button"
                 @click="closeModal"
-                class="flex-1 rounded-xl py-3 font-medium bg-white/10 text-white 
-                       hover:bg-white/20 transition-colors"
+                class="flex-1 rounded-xl py-3 font-medium bg-red-300/10 text-white 
+                       hover:bg-red-500/20 transition-colors"
               >
                 Cancelar
               </button>
               <button
                 type="submit"
                 class="flex-1 flex items-center justify-center gap-2 rounded-xl 
-                       bg-linear-to-r from-cyan-500 to-blue-600 py-3 font-bold text-white 
+                        bg-cyan-600 py-3 font-bold text-white 
                        shadow-lg shadow-cyan-500/250 transition-all hover:shadow-cyan-500/40 
                        hover:-translate-y-0.5"
               >
