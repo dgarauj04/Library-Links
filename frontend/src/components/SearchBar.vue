@@ -105,7 +105,7 @@ const toggleAiMode = () => {
         query ? 'opacity-100' : 'opacity-0'
       ]"
     >
-      <span class="text-purple-600/60 font-medium">
+      <span class="text-[#eb4a85e6] font-medium">
         {{ isAiMode ? 'Pressione Enter para buscar na web' : 'Buscando na biblioteca...' }}
       </span>
     </div>

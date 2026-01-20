@@ -151,8 +151,8 @@ const cancelDelete = () => {
             </div>
           </div>
 
-          <div class="mt-6 p-4 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20">
-            <p class="text-sm text-blue-800 dark:text-blue-300">
+          <div class="mt-6 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20">
+            <p class="text-sm text-blue-300">
               <strong>💡 Dica:</strong> Você não pode deletar categorias que possuem links. 
               Delete os links primeiro ou mova-os para outra categoria.
             </p>
@@ -163,7 +163,7 @@ const cancelDelete = () => {
               @click="closeModal"
               class="px-6 py-2.5 rounded-xl bg-pink-700
                      font-bold text-white shadow-lg shadow-pink-500/25 transition-all 
-                     hover:shadow-cyan-500/40 hover:-translate-y-0.5"
+                     hover:shadow-pink-500/40 hover:-translate-y-0.5"
             >
               Fechar
             </button>
