@@ -105,11 +105,8 @@ const toggleAiMode = () => {
         query ? 'opacity-100' : 'opacity-0'
       ]"
     >
-      <span class="text-purple-400/40 font-medium">
+      <span class="text-purple-600/60 font-medium">
         {{ isAiMode ? 'Pressione Enter para buscar na web' : 'Buscando na biblioteca...' }}
-      </span>
-      <span v-if="isAiMode" class="text-purple-600 dark:text-purple-400 font-bold">
-        Powered by Google
       </span>
     </div>
   </div>

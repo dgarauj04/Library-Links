@@ -160,7 +160,7 @@ onMounted(() => {
     <div class="text-center space-y-6 pt-10 px-4">
       <h1 
         class="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent 
-        bg-clip-text bg-linear-to-r from-slate-200 via-cyan-200 to-gray-200">
+        bg-clip-text bg-linear-to-r from-slate-200 via-cyan-100 to-gray-200">
         Library Links<br/> Biblioteca para Seus links favoritos.
       </h1>
       <p class="text-lg max-w-2xl mx-auto text-gray-400 font-medium">
