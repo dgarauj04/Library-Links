@@ -126,7 +126,7 @@ watch(isLoginSuccessful, (success) => {
           <span class="text-slate-500 dark:text-slate-400">Não tem uma conta? </span>
           <RouterLink 
             to="/register" 
-            class="font-semibold text-cyan-600 hover:text-cyan-500 dark:text-cyan-400"
+            class="font-semibold text-cyan-400 hover:text-cyan-500 hover:underline"
           >
             Crie agora
           </RouterLink>

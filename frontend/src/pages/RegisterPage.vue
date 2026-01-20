@@ -140,7 +140,7 @@ const registerSubmit = async () => {
             </div>
             <div>
               <label class="mb-1 block text-sm font-medium">
-                Confirmar
+                Confirmar Senha
               </label>
               <input
                 v-model="formData.confirmPassword"
@@ -179,7 +179,7 @@ const registerSubmit = async () => {
           <span class="text-slate-400">Já tem uma conta? </span>
           <RouterLink 
             to="/login" 
-            class="font-semibold hover:text-purple-500 text-purple-400"
+            class="font-semibold text-purple-400 hover:text-purple-500 hover:underline"
           >
             Entrar
           </RouterLink>
