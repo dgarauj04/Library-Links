@@ -9,6 +9,8 @@ import CategoryManager from '../components/CategoryManager.vue';
 import { getCategories, getLinks, addLink, addCategory, deleteLink, deleteCategory } from '../services/storageService';
 import { searchWebLinks, type SearchResult } from '../services/googleSearchService';
 import { logoutUser } from '../services/authService';
+import Footer from '../components/Footer.vue';
+import Feedback from '../components/Feedback.vue';
 
 const router = useRouter();
 const categories = ref<Category[]>([]);
@@ -25,6 +27,7 @@ const searchState = ref({
 });
 const addModalOpen = ref(false);
 const categoryManagerOpen = ref(false);
+const feedbackOpen = ref(false);
 
 const displayedLinks = computed(() => {
   if (searchState.value.isWebSearch && webSearchResults.value.length > 0) {
@@ -156,7 +159,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="space-y-6 pb-12">
+  <div class="space-y-8 pb-6">
     <div class="text-center space-y-6 pt-10 px-4">
       <h1 
         class="text-4xl md:text-6xl font-extrabold tracking-tight text-[#9dcec4c7] 
@@ -214,7 +217,7 @@ onMounted(() => {
       </button>
     </div>
 
-    <div class="space-y-4 px-2">
+    <div class="space-y-4 px-2 mb-8">
       <div class="flex items-center justify-between">
         <h2 class="text-2xl font-bold text-white">
           {{ resultTitle }}
@@ -234,7 +237,7 @@ onMounted(() => {
       <div 
         v-else-if="displayedLinks.length === 0 && !searchState.loading" 
         class="text-center py-20 rounded-3xl border border-dashed
-               dark:bg-white/5 dark:border-white/5"
+               bg-white/5 border-white/5"
       >
         <p class="text-gray-400 font-medium">
           {{ searchState.isWebSearch 
@@ -253,6 +256,10 @@ onMounted(() => {
         />
       </div>
     </div>
+
+    <Footer @open-feedback="feedbackOpen = true" />
+
+    <Feedback :is-open="feedbackOpen" @close="feedbackOpen = false" />
 
     <button
       @click="btnLogout"
@@ -301,6 +308,7 @@ onMounted(() => {
       @close="categoryManagerOpen = false"
       @delete-category="btnDeleteCategory"
     />
+
   </div>
 </template>
 

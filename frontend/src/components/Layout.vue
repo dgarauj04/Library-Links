@@ -13,7 +13,7 @@
       <div class="absolute inset-0 bg-[url('https://grainy-linears.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150 mix-blend-overlay"></div>
     </div>
 
-    <main class="relative z-10 pt-16 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <main class="relative z-10 py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <RouterView />
     </main>
   </div>

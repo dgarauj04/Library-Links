@@ -79,13 +79,11 @@ const cancelDelete = () => {
         <div 
           class="relative w-full max-w-2xl transform rounded-2xl border border-white/20 
                  p-6 shadow-2xl transition-all max-h-[80vh] overflow-y-auto
-                 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl 
-                 text-slate-900 dark:text-white"
+                 bg-slate-900/80 backdrop-blur-xl text-white"
         >
           <button 
             @click="closeModal"
-            class="absolute right-4 top-4 rounded-full p-1 text-gray-500 
-                   hover:bg-black/5 dark:text-gray-400 dark:hover:bg-white/10"
+            class="absolute right-4 top-4 rounded-full p-1 text-gray-400 hover:bg-white/10"
           >
             <X :size="20" />
           </button>
@@ -98,10 +96,9 @@ const cancelDelete = () => {
           <div 
             v-if="categories.length === 0"
             class="text-center py-12 rounded-xl border border-dashed
-                   bg-slate-50/50 border-slate-300
-                   dark:bg-white/5 dark:border-white/10"
+                   bg-white/5 border-white/10"
           >
-            <p class="text-slate-500 dark:text-gray-400 font-medium">
+            <p class="text-gray-400 font-medium">
               Nenhuma categoria encontrada. Crie uma nova categoria ao adicionar um link.
             </p>
           </div>
@@ -111,16 +108,13 @@ const cancelDelete = () => {
               v-for="category in categories"
               :key="category.id"
               class="flex items-center justify-between p-4 rounded-xl border
-                     bg-white/60 border-slate-200 hover:bg-white hover:shadow-md
-                     dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10
-                     transition-all"
+                      hover:shadow-md bg-white/5 border-white/10 hover:bg-white/10 transition-all"
             >
               <div class="flex items-center gap-3 flex-1">
                 <div 
                   class="w-10 h-10 rounded-xl flex items-center justify-center
-                         bg-linear-to-br from-cyan-500/10 to-blue-500/10
-                         border border-cyan-500/20
-                         dark:via-none dark:from-cyan-500/20 dark:to-blue-500/20"
+                         border border-cyan-500/20 
+                         bg-linear-to-br via-none from-cyan-500/20 to-blue-500/20"
                 >
                   <FolderOpen :size="20" class="text-cyan-600 dark:text-cyan-400" />
                 </div>

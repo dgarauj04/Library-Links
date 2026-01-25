@@ -3,6 +3,7 @@ import { ref, watch } from 'vue';
 import { useRouter, RouterLink } from 'vue-router';
 import { LogIn, Loader2 } from 'lucide-vue-next';
 import { loginUser } from '../services/authService';
+import Footer from '../components/Footer.vue';
 
 const router = useRouter();
 
@@ -39,7 +40,7 @@ watch(isLoginSuccessful, (success) => {
 </script>
 
 <template>
-  <div class="flex items-center justify-center min-h-screen p-4">
+  <div class="flex flex-col items-center justify-center gap-5 min-h-screen p-4">
     <div class="w-full max-w-md">
       <div 
         class="relative rounded-3xl border p-8 shadow-2xl backdrop-blur-xl transition-all

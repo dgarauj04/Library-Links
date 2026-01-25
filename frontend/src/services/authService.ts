@@ -59,7 +59,6 @@ export const loginUser = async (
     currentToken = access_token;
     currentUser = user;
   
-
     return {
       success: true,
       user,
